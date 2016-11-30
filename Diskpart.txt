@@ -1,0 +1,12 @@
+# Formatar Pen Drive com problemas de inicialização via GUI
+# Executar via CMD
+#
+Diskpart 
+List Disk
+Select Disk
+Clean
+Create partition primary 
+Active
+Format fs=fat32 quick
+Assign
+Exit
