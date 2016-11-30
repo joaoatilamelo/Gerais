@@ -1,0 +1,20 @@
+#Antes de tudo, adicionar o nome da maquina no arquivo host
+#Se for dominio, adicionar nome com e sem sufixo de domino no endereço de localhost 
+#No arquivo domain.xml editar conforme abaixo:
+#
+#Remover a linha
+#
+#<jvm-options>-XX:NewRatio=2</jvm-options>
+
+#
+#Adicionar as linhas abaixo
+#
+#<jvm-options>-Djava.net.preferIPv4Stack=true</jvm-options>
+#
+#Modificar a linha abaixo
+#
+#<jvm-options>-client</jvm-options>
+#Para
+#
+#<jvm-options>-server</jvm-options>
+
